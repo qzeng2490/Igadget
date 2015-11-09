@@ -388,7 +388,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.mw_bar1 {
+.mw_bar1, .Left > h2, .Left #SideCategoryList h2, .Left #SideCategoryShopByPrice h2, .Left #SideShopByBrand h2 {
   display: block;
   position: relative;
   overflow: scroll;
@@ -408,7 +408,7 @@ table {
   padding: 0px;
   color: white;
   text-decoration: none; }
-  .mw_bar1 a {
+  .mw_bar1 a, .Left > h2 a, .Left #SideCategoryList h2 a, .Left #SideCategoryShopByPrice h2 a, .Left #SideShopByBrand h2 a {
     color: white;
     padding: 10px; }
 
@@ -436,23 +436,6 @@ table {
     text-decoration: none;
     color: #FFFFFF !important;
     padding: 10px; }
-
-.mw_bar3 {
-  display: block;
-  position: relative;
-  overflow: scroll;
-  padding: 5px;
-  line-height: 1.4;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #F5F2E1;
-  border-top: 1px solid #6a1802;
-  padding: auto;
-  color: white;
-  text-decoration: none; }
-  .mw_bar3 a {
-    color: white;
-    padding: auto; }
 
 .sprites-AddCartButton {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px 0px;
@@ -539,12 +522,12 @@ table {
   width: 60px;
   height: 33px; }
 
-.sprites-menu_go {
+.sprites-menu_go, .Left #SideCategoryList div ul li a > .mw_arrow, .Left #SideCategoryShopByPrice div ul li a > .mw_arrow, .Left #SideShopByBrand div ul li a > .mw_arrow {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -706px;
   width: 9px;
   height: 13px; }
 
-.sprites-minus {
+.sprites-minus, .Left #SideCategoryList h2[data-ur-state="enabled"] > .mw_indicator, .Left #SideCategoryShopByPrice h2[data-ur-state="enabled"] > .mw_indicator, .Left #SideShopByBrand h2[data-ur-state="enabled"] > .mw_indicator {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -720px;
   width: 13px;
   height: 13px; }
@@ -559,7 +542,7 @@ table {
   width: 15px;
   height: 15px; }
 
-.sprites-plus {
+.sprites-plus, .Left #SideCategoryList h2[data-ur-state="disabled"] > .mw_indicator, .Left #SideCategoryShopByPrice h2[data-ur-state="disabled"] > .mw_indicator, .Left #SideShopByBrand h2[data-ur-state="disabled"] > .mw_indicator {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -762px;
   width: 13px;
   height: 13px; }
@@ -972,3 +955,53 @@ input[type="number"]::-webkit-outer-spin-button {
 
 [data-ur-carousel-component="item"] {
   float: left; }
+
+.Left {
+  border-radius: 5px;
+  padding: 0px; }
+  .Left > h2 {
+    margin-bottom: 0px;
+    padding-left: 10px;
+    font-size: 25px; }
+  .Left #SideCategoryList h2, .Left #SideCategoryShopByPrice h2, .Left #SideShopByBrand h2 {
+    min-height: 0px;
+    padding: 11px 10px 10px;
+    margin: 0px; }
+    .Left #SideCategoryList h2 .mw_indicator, .Left #SideCategoryShopByPrice h2 .mw_indicator, .Left #SideShopByBrand h2 .mw_indicator {
+      float: right; }
+  .Left #SideCategoryList div ul, .Left #SideCategoryShopByPrice div ul, .Left #SideShopByBrand div ul {
+    padding: 2px 0 0;
+    background-color: #F5F2E1;
+    border-left: 1px solid #5f0f02;
+    border-right: 1px solid #5f0f02;
+    border-bottom: 1px solid #5f0f02;
+    overflow: hidden;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px; }
+    .Left #SideCategoryList div ul li, .Left #SideCategoryShopByPrice div ul li, .Left #SideShopByBrand div ul li {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #5f0f02; }
+      .Left #SideCategoryList div ul li a, .Left #SideCategoryShopByPrice div ul li a, .Left #SideShopByBrand div ul li a {
+        display: block;
+        padding: 11px 20px 9px;
+        color: #3D211A;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: none; }
+        .Left #SideCategoryList div ul li a > .mw_arrow, .Left #SideCategoryShopByPrice div ul li a > .mw_arrow, .Left #SideShopByBrand div ul li a > .mw_arrow {
+          float: right; }
+      .Left #SideCategoryList div ul li:last-child, .Left #SideCategoryShopByPrice div ul li:last-child, .Left #SideShopByBrand div ul li:last-child {
+        padding-bottom: 3px;
+        overflow: hidden;
+        border-bottom: 0px none #000; }
+
+#Wrapper .ProductMain {
+  background-color: #f0f0f0;
+  border: 1px solid #e5e5e5;
+  padding: 8px;
+  margin-bottom: 10px; }
+  #Wrapper .ProductMain .DetailRow div {
+    display: inline; }
+  #Wrapper .ProductMain .productAddToCartRight .BulkDiscount {
+    display: block; }
