@@ -16,11 +16,6 @@ module.exports = function() {
   $(".ProductCompareButton").remove()
   $(".CompareButton").remove()
 
-  // $(".FloatRight.SortBox").children().first().children().content().filter(
-  //     function(){
-  //       return (this.nodeType == 3)
-  //     }
-  //   ).wrap("span")
 
   // Add carousel
   var frmCompare = $("#frmCompare");
@@ -40,6 +35,8 @@ module.exports = function() {
   Top_and_newPro.find(".ProductList").attr("data-ur-carousel-component","scroll_container");
 
   Top_and_newPro.find("li").attr("data-ur-carousel-component","item");
+
+  //$(".TopSellerNumber").remove()
   
 
 };

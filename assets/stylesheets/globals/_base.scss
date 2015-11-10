@@ -69,11 +69,74 @@ input[type="number"]::-webkit-outer-spin-button {
 //------------------------------------------------------------------------------
 
 
+#Wrapper{
+  .ProductList{
+    strong a{
+      color: $color5;
+    }
+    ul{
+      background-color: $color5;
+    }
+    li{
+      list-style-type: none;
+      width: 150px;
+      // max-width: 45%;
+      height: 200px;
+      // text-align: center;
+      .ProductImage{
+        height: 50%;
+        max-height: 120px;
+        min-height: 100px;
+        display: table;
+        a{
+          vertical-align: middle;
+          display: table-cell;
+          img{
+            display: block;
+            height: 120px;
+          }
+        }
+      }
+      .ProductDetails{
+        height: 13%;
+        font-size: $text_font - 1px;
+        *{
+          color: $black;
+        }
+      }
+      .ProductPriceRating{
+        width: 100%;
+        height: 13%;
+      }
+      .ProductActionAdd{ 
+        @extend .mw_btn1;
+        text-align: center;
+        border-radius: 5px;
+        a{
+          display: table-cell;
+          height: 40px;
+          width: 135px;
+          vertical-align: middle;
+          font-size: 14px;
+        }
+      } 
+
+    }
+  }
+}
 
 
 
-
-
+[data-ur-set="carousel"] {
+  overflow: hidden;
+  position: relative;
+}
+[data-ur-carousel-component="item"] {
+  float: left;
+}
+[data-ur-carousel-component="dot"] {
+  margin: 20px 1px;
+}
 
 
 

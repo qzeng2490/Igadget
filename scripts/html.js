@@ -19,8 +19,8 @@ module.exports = function() {
     // Modifying the head tag of the document using the global head selector
     $(head).prepend("<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>");
 
-    head.append(tag('script', {'data-keep': 'true', type: 'text/javascript', src: fns.asset('javascript/head.js')}));
-    body.append(tag('script', {'data-keep': 'true', type: 'text/javascript', src: fns.asset('javascript/body.js')}));
+    // head.append(tag('script', {'data-keep': 'true', type: 'text/javascript', src: fns.asset('javascript/head.js')}));
+    // body.append(tag('script', {'data-keep': 'true', type: 'text/javascript', src: fns.asset('javascript/body.js')}));
 
     // Modifying the body of the document using the global body selector
     scoped$(body, function() {

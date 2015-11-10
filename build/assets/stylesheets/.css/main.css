@@ -388,6 +388,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.mw_btn1, #Wrapper .ProductList li .ProductActionAdd, #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductDetails .ProductActionAdd {
+  background-color: #6a1802;
+  color: white;
+  height: 40px;
+  width: 90%; }
+  .mw_btn1 a, #Wrapper .ProductList li .ProductActionAdd a, #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductDetails .ProductActionAdd a {
+    display: block;
+    color: white !important; }
+
 .mw_bar1, .Left > h2, .Left #SideCategoryList h2, .Left #SideCategoryShopByPrice h2, .Left #SideShopByBrand h2 {
   display: block;
   position: relative;
@@ -406,10 +415,10 @@ table {
   border-top: 1px solid #6a1802;
   min-height: 40px;
   padding: 0px;
-  color: white;
+  color: black;
   text-decoration: none; }
   .mw_bar1 a, .Left > h2 a, .Left #SideCategoryList h2 a, .Left #SideCategoryShopByPrice h2 a, .Left #SideShopByBrand h2 a {
-    color: white;
+    color: black;
     padding: 10px; }
 
 .mw_bar2 {
@@ -430,7 +439,7 @@ table {
   border-top: 1px solid #6a1802;
   min-height: 40px;
   padding: 0px;
-  color: white;
+  color: black;
   text-decoration: none; }
   .mw_bar2 a {
     text-decoration: none;
@@ -532,7 +541,7 @@ table {
   width: 13px;
   height: 13px; }
 
-.sprites-moovweb {
+.sprites-moovweb, .mw-footer .mw-logo p:last-of-type {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -734px;
   width: 90px;
   height: 11px; }
@@ -856,6 +865,55 @@ input[type="number"]::-webkit-outer-spin-button {
 .mw-hide {
   display: none; }
 
+#Wrapper .ProductList strong a {
+  color: #075899; }
+
+#Wrapper .ProductList ul {
+  background-color: #075899; }
+
+#Wrapper .ProductList li {
+  list-style-type: none;
+  width: 150px;
+  height: 200px; }
+  #Wrapper .ProductList li .ProductImage {
+    height: 50%;
+    max-height: 120px;
+    min-height: 100px;
+    display: table; }
+    #Wrapper .ProductList li .ProductImage a {
+      vertical-align: middle;
+      display: table-cell; }
+      #Wrapper .ProductList li .ProductImage a img {
+        display: block;
+        height: 120px; }
+  #Wrapper .ProductList li .ProductDetails {
+    height: 13%;
+    font-size: 12px; }
+    #Wrapper .ProductList li .ProductDetails * {
+      color: #000000; }
+  #Wrapper .ProductList li .ProductPriceRating {
+    width: 100%;
+    height: 13%; }
+  #Wrapper .ProductList li .ProductActionAdd {
+    text-align: center;
+    border-radius: 5px; }
+    #Wrapper .ProductList li .ProductActionAdd a {
+      display: table-cell;
+      height: 40px;
+      width: 135px;
+      vertical-align: middle;
+      font-size: 14px; }
+
+[data-ur-set="carousel"] {
+  overflow: hidden;
+  position: relative; }
+
+[data-ur-carousel-component="item"] {
+  float: left; }
+
+[data-ur-carousel-component="dot"] {
+  margin: 20px 1px; }
+
 #Header {
   background: #B03B01;
   border-top: 1px solid black; }
@@ -922,39 +980,20 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-right: 5px;
   margin-top: -38px; }
 
-#Wrapper .ProductList strong a {
-  color: #075899; }
-
-#Wrapper .ProductList ul {
-  background-color: #075899; }
-
-#Wrapper .ProductList li {
-  list-style-type: none;
-  width: 150px;
-  height: 200px; }
-  #Wrapper .ProductList li .ProductImage {
-    height: 50%;
-    max-height: 120px;
-    min-height: 100px;
-    display: table; }
-    #Wrapper .ProductList li .ProductImage a {
-      vertical-align: middle;
-      display: table-cell; }
-  #Wrapper .ProductList li .ProductDetails {
-    height: 13%;
+.mw-footer .mw-logo {
+  background-color: #5A1212;
+  text-align: center;
+  color: white; }
+  .mw-footer .mw-logo p:nth-of-type(1) {
+    padding-top: 22px;
     font-size: 12px; }
-    #Wrapper .ProductList li .ProductDetails * {
-      color: #000000; }
-  #Wrapper .ProductList li .ProductPriceRating {
-    width: 100%;
-    height: 13%; }
-
-[data-ur-set="carousel"] {
-  overflow: hidden;
-  position: relative; }
-
-[data-ur-carousel-component="item"] {
-  float: left; }
+  .mw-footer .mw-logo p:nth-of-type(2) {
+    font-size: 12px; }
+  .mw-footer .mw-logo p:nth-of-type(3) {
+    font-size: 10px; }
+  .mw-footer .mw-logo p:last-of-type {
+    text-indent: -9999px;
+    margin-left: 134px; }
 
 .Left {
   border-radius: 5px;
@@ -962,14 +1001,20 @@ input[type="number"]::-webkit-outer-spin-button {
   .Left > h2 {
     margin-bottom: 0px;
     padding-left: 10px;
-    font-size: 25px; }
+    font-size: 25px;
+    border-top: 0; }
   .Left #SideCategoryList h2, .Left #SideCategoryShopByPrice h2, .Left #SideShopByBrand h2 {
     min-height: 0px;
     padding: 11px 10px 10px;
-    margin: 0px; }
+    margin: 3px 3px 0 3px;
+    background-color: #6a1802;
+    border-radius: 5px;
+    color: white; }
     .Left #SideCategoryList h2 .mw_indicator, .Left #SideCategoryShopByPrice h2 .mw_indicator, .Left #SideShopByBrand h2 .mw_indicator {
       float: right; }
   .Left #SideCategoryList div ul, .Left #SideCategoryShopByPrice div ul, .Left #SideShopByBrand div ul {
+    margin-left: 3px;
+    margin-right: 3px;
     padding: 2px 0 0;
     background-color: #F5F2E1;
     border-left: 1px solid #5f0f02;
@@ -995,6 +1040,45 @@ input[type="number"]::-webkit-outer-spin-button {
         padding-bottom: 3px;
         overflow: hidden;
         border-bottom: 0px none #000; }
+
+#LayoutColumn3 #SideCategoryTopSellers .ProductList li {
+  list-style-type: none;
+  width: 150px;
+  height: 200px; }
+  #LayoutColumn3 #SideCategoryTopSellers .ProductList li .TopSellerNumber {
+    height: 15px; }
+  #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductImage {
+    height: 50%;
+    max-height: 120px;
+    min-height: 100px;
+    display: table; }
+    #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductImage a {
+      vertical-align: middle;
+      display: table-cell; }
+      #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductImage a img {
+        display: block;
+        height: 120px; }
+  #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductDetails {
+    height: 50%;
+    font-size: 12px; }
+    #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductDetails * {
+      color: #000000; }
+    #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductDetails strong {
+      height: 28px;
+      display: block; }
+    #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductDetails .ProductPriceRating {
+      width: 100%;
+      height: 13%; }
+    #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductDetails .ProductActionAdd {
+      text-align: center;
+      border-radius: 5px;
+      height: 37px; }
+      #LayoutColumn3 #SideCategoryTopSellers .ProductList li .ProductDetails .ProductActionAdd a {
+        display: table-cell;
+        height: 37px;
+        width: 135px;
+        vertical-align: middle;
+        font-size: 14px; }
 
 #Wrapper .ProductMain {
   background-color: #f0f0f0;
